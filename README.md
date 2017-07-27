@@ -1,4 +1,4 @@
-# Feedforward Snowmobile Monocular Obstacle Avoidance
+# Autonomous Snowmobile Monocular Obstacle Avoidance
 *Lead Architect: Ryan J. Richards*
 
 *LabVIEW and OpenCV code for obstacle detection and avoidance in snowy conditions*
@@ -13,8 +13,12 @@ Although Optical-Flow based methods have been asserted in the past for monocular
 
 ![untitled diagram](https://user-images.githubusercontent.com/23239868/28692853-61054774-72f0-11e7-9c6b-1f76897dc23a.jpg)
 
-
 ## LabVIEW Code ##
+
+LabVIEW IMAQ (image acquisition) libraries have been used extensively to complete the feedforward system. 
+
+![1](https://user-images.githubusercontent.com/23239868/28693449-b45ea2ec-72f2-11e7-9ce3-2f288aeb96af.PNG)
+
 
 ## OpenCV/C++ Code ##
 
@@ -25,8 +29,6 @@ Although Optical-Flow based methods have been asserted in the past for monocular
 ## Testing/Results ##
 
 ![ezgif com-video-to-gif 2](https://user-images.githubusercontent.com/23239868/28652591-a7a80e5e-7256-11e7-9c03-d41bdddb1ac8.gif)
-
-
 
 ![ezgif com-video-to-gif 6](https://user-images.githubusercontent.com/23239868/28677336-38f9dc2a-72bb-11e7-8e94-b41546a17c08.gif)
 
