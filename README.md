@@ -3,9 +3,11 @@
 
 *LabVIEW and OpenCV code for obstacle detection and avoidance in snowy conditions*
 
-## Theory ##
+## Methodology ##
 
 Autonomous vehicles in snowy environments require an obstacle avoidance feature. Rather than using expensive equipment (LIDAR, sonar, etc),  a simple monocular solution can be created. This single-camera setup uses simple thresholding and particle analysis techniques to detect and highlight any obstacles. After detection, a steering avoidance script can be written to bypass the obstacle based on its location.
+
+Although Optical-Flow based methods have been asserted in the past for monocular obstacle avoidance, a better algorithm involves color threshold and particle analysis - which takes advantage of the snow-covered environment.
 
 ## LabVIEW Code ##
 
