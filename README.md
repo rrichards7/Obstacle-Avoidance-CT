@@ -13,7 +13,7 @@ Autonomous vehicles in snowy environments require an obstacle avoidance feature.
 
 ## OpenCV/Python Code ##
 
-## RaspberryPi Integration ##
+## RaspberryPi/GoPro Integration ##
 
 ## Testing/Results ##
 
