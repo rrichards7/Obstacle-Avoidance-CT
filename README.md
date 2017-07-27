@@ -1,9 +1,11 @@
 # Autonomous Snowmobile Monocular Obstacle Avoidance
+*Lead Architect: Ryan J. Richards*
 
-LabVIEW code for obstacle detection and avoidance in snowy conditions
+*LabVIEW and OpenCV code for obstacle detection and avoidance in snowy conditions*
 
 ## Theory ##
 
+Autonomous vehicles in snowy environments require an obstacle avoidance feature. Rather than using expensive equipment (LIDAR, sonar, etc),  a simple monocular solution can be created. This single-camera setup uses simple thresholding and particle analysis techniques to detect and highlight any obstacles. After detection, a steering avoidance script can be written to bypass the obstacle based on its location.
 
 ## LabVIEW Code ##
 
