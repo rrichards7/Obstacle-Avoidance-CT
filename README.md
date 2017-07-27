@@ -15,7 +15,7 @@ Although Optical-Flow based methods have been asserted in the past for monocular
 
 ## LabVIEW Code ##
 
-LabVIEW IMAQ (image acquisition) libraries have been used extensively to complete the feedforward system. 
+LabVIEW IMAQ (image acquisition) libraries [1] have been used extensively to complete the feedforward system. 
 
 ![1](https://user-images.githubusercontent.com/23239868/28693449-b45ea2ec-72f2-11e7-9ce3-2f288aeb96af.PNG)
 
@@ -34,3 +34,5 @@ LabVIEW IMAQ (image acquisition) libraries have been used extensively to complet
 
 
 ## Appendix ##
+
+[1] http://www.ni.com/white-paper/3470/en/
