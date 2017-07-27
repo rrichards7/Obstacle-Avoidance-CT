@@ -7,6 +7,8 @@ LabVIEW code for obstacle detection and avoidance in snowy conditions
 
 ## LabVIEW Code ##
 
+## OpenCV/C++ Code ##
+
 ## OpenCV/Python Code ##
 
 ## RaspberryPi Integration ##
