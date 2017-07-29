@@ -1,4 +1,4 @@
-![eecs-header-mobile](https://user-images.githubusercontent.com/23239868/28728329-3dc1609e-7396-11e7-910b-6be87048d7d8.png)
+![image001](https://user-images.githubusercontent.com/23239868/28748600-b190782c-7489-11e7-82ae-55db54c94050.jpg)
 # Autonomous Snowmobile Monocular Obstacle Avoidance
 *Lead Architect: Ryan J. Richards*
 
