@@ -6,7 +6,7 @@
 
 ![ezgif com-video-to-gif 4](https://user-images.githubusercontent.com/23239868/28676573-ff21a2be-72b8-11e7-88fa-b2b459883bd7.gif)
 
-## Methodology ##
+## Introduction/Methodology ##
 
 Autonomous vehicles in snowy environments require an obstacle avoidance feature. Rather than using expensive equipment (LIDAR, sonar, etc),  a simple monocular solution can be created. This single-camera setup uses simple thresholding and particle analysis techniques to detect and highlight any obstacles. After detection, a steering avoidance script can be written to bypass the obstacle based on its location.
 
@@ -14,7 +14,11 @@ Although Optical-Flow based methods have been asserted in the past for monocular
 
 ![untitled diagram](https://user-images.githubusercontent.com/23239868/28692853-61054774-72f0-11e7-9c6b-1f76897dc23a.jpg)
 
+Although the SnowDrone image processing unit was initially proposed to run on the Raspberry Pi (and send commands to the main ArduinoMEGA for obstacle avoidance), an alternative setup is to send images captured on the Raspberry Pi to the ArduinoMEGA, which would then relay the images back to the ground control station (GCS). The GCS would then processes the images on the main computer (therefore reducing power consumption, but also increasing processing time). Therefore, two options are proposed here (1) LabVIEW code which can easily be integrated into the GCS/GUI code and (2) Python code which utilizes OpenCV to be executed on the Raspberry Pi.
+
 ## LabVIEW Code ##
+
+
 
 LabVIEW IMAQ (image acquisition) libraries [1] have been used extensively to complete the feedforward system (main image processing flow pictured below).
 
@@ -27,11 +31,11 @@ You can control the delay of the code by adjusting the delay slide control - and
 
 ![1](https://user-images.githubusercontent.com/23239868/28901534-c5667690-77c6-11e7-9ac9-4bd018751014.JPG)
 
-## OpenCV/C++ Code ##
-
 ## OpenCV/Python Code ##
 
-## RaspberryPi/GoPro Integration ##
+This code has been proven to work on LabVIEW - but it must also be constructed on OpenCV using python so that it can be executed on a Raspberry Pi. 
+
+## RaspberryPi/Camera Integration ##
 
 ## Testing/Results ##
 
