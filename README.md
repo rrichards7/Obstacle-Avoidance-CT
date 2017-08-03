@@ -10,16 +10,21 @@
 
 Autonomous vehicles in snowy environments require an obstacle avoidance feature. Rather than using expensive equipment (LIDAR, sonar, etc),  a simple monocular solution can be created. This single-camera setup uses simple thresholding and particle analysis techniques to detect and highlight any obstacles. After detection, a steering avoidance script can be written to bypass the obstacle based on its location.
 
-Although Optical-Flow based methods have been asserted in the past for monocular obstacle avoidance, a better algorithm involves color threshold and particle analysis - which takes advantage of the snow-covered environment. A feedforward image processing system has been created that has the following architecture:
+Although Optical-Flow based methods have been asserted in the past for monocular obstacle avoidance, a better algorithm involves color threshold and particle analysis - which takes advantage of the snow-covered environment. A feedforward image processing system has been created that has the following data flow:
 
 ![untitled diagram](https://user-images.githubusercontent.com/23239868/28692853-61054774-72f0-11e7-9c6b-1f76897dc23a.jpg)
 
 ## LabVIEW Code ##
 
-LabVIEW IMAQ (image acquisition) libraries [1] have been used extensively to complete the feedforward system. 
+LabVIEW IMAQ (image acquisition) libraries [1] have been used extensively to complete the feedforward system (main image processing flow pictured below).
 
 ![1](https://user-images.githubusercontent.com/23239868/28693449-b45ea2ec-72f2-11e7-9ce3-2f288aeb96af.PNG)
 
+This VI processes a video by taking individual pictures within a folder. You must convert the video to JPG/JPEG format before running it through this VI. Otherwise, modify the code to accomodate **.avi** videos.
+
+You can control the delay of the code by adjusting the delay slide control - and stop the VI at any point by pressing the **stop** button.
+
+![1](https://user-images.githubusercontent.com/23239868/28901502-9bbabff4-77c6-11e7-8509-aa2642d6c895.JPG)
 
 ## OpenCV/C++ Code ##
 
@@ -37,3 +42,5 @@ LabVIEW IMAQ (image acquisition) libraries [1] have been used extensively to com
 ## Appendix ##
 
 [1] http://www.ni.com/white-paper/3470/en/
+
+
