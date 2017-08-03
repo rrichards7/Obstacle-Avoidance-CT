@@ -22,7 +22,7 @@ LabVIEW IMAQ (image acquisition) libraries [1] have been used extensively to com
 
 ![1](https://user-images.githubusercontent.com/23239868/28693449-b45ea2ec-72f2-11e7-9ce3-2f288aeb96af.PNG)
 
-*Setup instructions*
+### Setup Instructions ###
 
 **Note:** This VI processes a video by taking individual pictures within a folder. You must convert the video to JPG/JPEG format before running it through this VI. Otherwise, modify the code to accomodate **.avi** videos.
 
