@@ -18,26 +18,42 @@ Although the SnowDrone image processing unit was initially proposed to run on th
 
 ## LabVIEW Code ##
 
-
-
 LabVIEW IMAQ (image acquisition) libraries [1] have been used extensively to complete the feedforward system (main image processing flow pictured below).
 
 ![1](https://user-images.githubusercontent.com/23239868/28693449-b45ea2ec-72f2-11e7-9ce3-2f288aeb96af.PNG)
 
-This VI processes a video by taking individual pictures within a folder. You must convert the video to JPG/JPEG format before running it through this VI. Otherwise, modify the code to accomodate **.avi** videos.
+*Setup instructions*
 
-You can control the delay of the code by adjusting the delay slide control - and stop the VI at any point by pressing the **stop** button.
+**Note:** This VI processes a video by taking individual pictures within a folder. You must convert the video to JPG/JPEG format before running it through this VI. Otherwise, modify the code to accomodate **.avi** videos.
+
+(1) Click the browse button on the **Video Sequence Folder Path** and choose the desired folder of images
+
+(2) Click the **Run** button and watch the obstacle avoidance execute
+
+(3) If you want to delay the process, then slide the **delay (s)** control.
+
+*Optional* if you want to stop the code at any time then click the **STOP** button.
+![2](https://user-images.githubusercontent.com/23239868/28926963-51f752e4-7837-11e7-8061-00c40541e041.JPG)
 
 
-![1](https://user-images.githubusercontent.com/23239868/28901534-c5667690-77c6-11e7-9ac9-4bd018751014.JPG)
+
 
 ## OpenCV/Python Code ##
 
-This code has been proven to work on LabVIEW - but it must also be constructed on OpenCV using python so that it can be executed on a Raspberry Pi. 
+This code has been proven to work on LabVIEW - but it must also be constructed on OpenCV using python so that it can be executed on a Raspberry Pi. Similar functions were used in OpenCV to create this obstacle avoidance system.
+
+If you have not yet downloaded OpenCV libraries to the Raspberry Pi then follow these instructions: [OpenCV RPI](http://www.pyimagesearch.com/2016/04/18/install-guide-raspberry-pi-3-raspbian-jessie-opencv-3/)
+
+
 
 ## RaspberryPi/Camera Integration ##
 
+
+
+
 ## Testing/Results ##
+
+Videos have been included in this repository which demonstrate the effectiveness of the LabVIEW/Python code (previewed below).
 
 ![ezgif com-video-to-gif 2](https://user-images.githubusercontent.com/23239868/28652591-a7a80e5e-7256-11e7-9c03-d41bdddb1ac8.gif)
 
