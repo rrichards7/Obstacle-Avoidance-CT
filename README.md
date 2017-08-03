@@ -24,7 +24,8 @@ This VI processes a video by taking individual pictures within a folder. You mus
 
 You can control the delay of the code by adjusting the delay slide control - and stop the VI at any point by pressing the **stop** button.
 
-![1](https://user-images.githubusercontent.com/23239868/28901502-9bbabff4-77c6-11e7-8509-aa2642d6c895.JPG)
+
+![1](https://user-images.githubusercontent.com/23239868/28901534-c5667690-77c6-11e7-9ac9-4bd018751014.JPG)
 
 ## OpenCV/C++ Code ##
 
