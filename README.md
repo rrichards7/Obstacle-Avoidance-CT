@@ -68,7 +68,8 @@ These results are essentially the equivalent to those achieved using LabVIEW.
 
 Then, an RPI camera [2] was attached to the RPI and the camera-based script was executed. The results are shown below - the color threshold and contour tracking feature worked very well.
 
-
+![image](https://user-images.githubusercontent.com/23239868/28971916-da43476a-78fb-11e7-9f3e-92f31e941b3d.png)
+![mask](https://user-images.githubusercontent.com/23239868/28971917-da463024-78fb-11e7-99bd-c587a1a805d6.png)
 
 
 ## Testing/Results ##
