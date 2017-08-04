@@ -57,9 +57,7 @@ Python code was developed to process a video that the user can manually input:
 cap = cv2.VideoCapture("/media/pi/RYAN/Summer Research/SnowDrone/camera/videos/snowRun2.mp4")
 ```
 
-This video will then be processsed frame-by-frame.
-
-The results for the OpenCV/python code running on the RPI are shown below:
+This video will then be processsed frame-by-frame. The results for the OpenCV/python code running on the RPI are shown below:
 
 ![image](https://user-images.githubusercontent.com/23239868/28970974-65c33db2-78f8-11e7-955c-68703b2fe03a.png)
 ![mask](https://user-images.githubusercontent.com/23239868/28970975-65cb46ec-78f8-11e7-9678-11d8b56fb93f.png)
@@ -67,6 +65,10 @@ The results for the OpenCV/python code running on the RPI are shown below:
 These results are essentially the equivalent to those achieved using LabVIEW.
 
 ### Camera-based Script ###
+
+Then, an RPI camera [2] was attached to the RPI and the camera-based script was executed. The results are shown below - the color threshold and contour tracking feature worked very well.
+
+
 
 
 ## Testing/Results ##
@@ -81,5 +83,7 @@ Videos have been included in this repository which demonstrate the effectiveness
 ## Appendix ##
 
 [1] http://www.ni.com/white-paper/3470/en/
+
+[2] https://www.adafruit.com/product/1367
 
 
