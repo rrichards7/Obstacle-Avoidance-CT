@@ -33,14 +33,18 @@ LabVIEW IMAQ (image acquisition) libraries [1] have been used extensively to com
 (3) If you want to delay the process, then slide the **delay (s)** control.
 
 *Optional* if you want to stop the code at any time then click the **STOP** button.
+
 ![2](https://user-images.githubusercontent.com/23239868/28926963-51f752e4-7837-11e7-8061-00c40541e041.JPG)
 
+## OpenCV/Python Code ##
 
+This code has been proven to work on LabVIEW - but it must also be constructed on OpenCV using python so that it can be executed on a Raspberry Pi. Two python scripts were created, (1) processes a manually entered video and (2) processes images captured from an attached camera. Similar functions from LabVIEW were used in OpenCV  to create this obstacle avoidance system, including a color array range function:
 
+```python
+mask = cv2.inRange(image,lower_RGB,upper_RGB)
+```
 
-## OpenCV/Python Video Code ##
-
-This code has been proven to work on LabVIEW - but it must also be constructed on OpenCV using python so that it can be executed on a Raspberry Pi. Similar functions were used in OpenCV to create this obstacle avoidance system. Python code was developed to process a video that the user can manually input:
+Python code was developed to process a video that the user can manually input:
 
 ```python
 # choose video to process from file
