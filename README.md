@@ -38,7 +38,13 @@ LabVIEW IMAQ (image acquisition) libraries [1] have been used extensively to com
 
 ## OpenCV/Python Code ##
 
-This code has been proven to work on LabVIEW - but it must also be constructed on OpenCV using python so that it can be executed on a Raspberry Pi. Two python scripts were created, (1) processes a manually entered video and (2) processes images captured from an attached camera. Similar functions from LabVIEW were used in OpenCV  to create this obstacle avoidance system, including a color array range function:
+This code has been proven to work on LabVIEW - but it must also be constructed on OpenCV using python so that it can be executed on a Raspberry Pi. Two python scripts were created, (1) processes a manually entered video and (2) processes images captured from an attached camera. 
+
+If you have not yet downloaded OpenCV libraries to the Raspberry Pi then follow these instructions: [OpenCV RPI](http://www.pyimagesearch.com/2016/04/18/install-guide-raspberry-pi-3-raspbian-jessie-opencv-3/)
+
+### Video-based Script ###
+
+Similar functions from LabVIEW were used in OpenCV  to create this obstacle avoidance system, including a color array range function:
 
 ```python
 mask = cv2.inRange(image,lower_RGB,upper_RGB)
@@ -60,11 +66,7 @@ The results for the OpenCV/python code running on the RPI are shown below:
 
 These results are essentially the equivalent to those achieved using LabVIEW.
 
-## RaspberryPi/Camera Integration ##
-
-If you have not yet downloaded OpenCV libraries to the Raspberry Pi then follow these instructions: [OpenCV RPI](http://www.pyimagesearch.com/2016/04/18/install-guide-raspberry-pi-3-raspbian-jessie-opencv-3/)
-
-After downloading 
+### Camera-based Script ###
 
 
 ## Testing/Results ##
