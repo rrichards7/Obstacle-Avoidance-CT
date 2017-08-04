@@ -38,17 +38,29 @@ LabVIEW IMAQ (image acquisition) libraries [1] have been used extensively to com
 
 
 
-## OpenCV/Python Code ##
+## OpenCV/Python Video Code ##
 
-This code has been proven to work on LabVIEW - but it must also be constructed on OpenCV using python so that it can be executed on a Raspberry Pi. Similar functions were used in OpenCV to create this obstacle avoidance system.
+This code has been proven to work on LabVIEW - but it must also be constructed on OpenCV using python so that it can be executed on a Raspberry Pi. Similar functions were used in OpenCV to create this obstacle avoidance system. Python code was developed to process a video that the user can manually input:
 
-If you have not yet downloaded OpenCV libraries to the Raspberry Pi then follow these instructions: [OpenCV RPI](http://www.pyimagesearch.com/2016/04/18/install-guide-raspberry-pi-3-raspbian-jessie-opencv-3/)
+```python
+# choose video to process from file
+cap = cv2.VideoCapture("/media/pi/RYAN/Summer Research/SnowDrone/camera/videos/snowRun2.mp4")
+```
 
+This video will then be processsed frame-by-frame.
 
+The results for the OpenCV/python code running on the RPI are shown below:
+
+![image](https://user-images.githubusercontent.com/23239868/28970974-65c33db2-78f8-11e7-955c-68703b2fe03a.png)
+![mask](https://user-images.githubusercontent.com/23239868/28970975-65cb46ec-78f8-11e7-9678-11d8b56fb93f.png)
+
+These results are essentially the equivalent to those achieved using LabVIEW.
 
 ## RaspberryPi/Camera Integration ##
 
+If you have not yet downloaded OpenCV libraries to the Raspberry Pi then follow these instructions: [OpenCV RPI](http://www.pyimagesearch.com/2016/04/18/install-guide-raspberry-pi-3-raspbian-jessie-opencv-3/)
 
+After downloading 
 
 
 ## Testing/Results ##
